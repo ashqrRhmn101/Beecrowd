@@ -1,0 +1,10 @@
+#include<stdio.h>
+#define PI 3.14159
+int main()
+{
+     double R,value;
+     scanf("%lf",&R);
+     value =(PI*R*R*R*4.0)/3;
+     printf("VOLUME = %.3lf\n",value);
+     return 0;
+}
