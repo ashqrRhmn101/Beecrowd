@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+  char name[30];
+  double fixedSalary,monthSalary,total;
+    scanf("%s",&name);
+    scanf("%lf %lf",&fixedSalary,&monthSalary);
+    total = (monthSalary*0.15)+fixedSalary;
+ printf("TOTAL = R$ %.2lf\n",total);
+return 0;
+}
