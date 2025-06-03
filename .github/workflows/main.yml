@@ -1,0 +1,31 @@
+name: Compile and Test C/C++ Code
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up C/C++ compiler
+      run: sudo apt update && sudo apt install build-essential
+
+    - name: Compile All C Files
+      run: |
+        for file in *.c; do
+          gcc "$file" -o "${file%.c}.out"
+        done
+
+    - name: Compile All C++ Files
+      run: |
+        for file in *.cpp; do
+          g++ "$file" -o "${file%.cpp}.out"
+        done
