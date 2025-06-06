@@ -7,8 +7,9 @@ I regularly solve problems to improve my coding and problem-solving skills. All 
 
 ## 🛠️ Language Used
 - c
-- Python
 - C++
+- - Python
 
 ## 📁 Folder Structure
+
 
