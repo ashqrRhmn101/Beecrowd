@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    double total,h,km;
+    scanf("%lf %lf" ,&h,&km);
+    total = ((h*km)/12);
+    printf("%.3lf\n",total);
+    return 0;
+}
